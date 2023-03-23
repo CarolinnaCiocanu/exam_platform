@@ -2,12 +2,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
 
 import Navbar from "../components/Navbar";
+import { wrapper } from "../redux/store";
+import { useSelector } from "react-redux";
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
+  const user = useSelector((state) => state.AuthReducer.user);
+  console.log("user = ", user);
   return (
     <>
-      <Navbar />
+      <Navbar user={user} />
       <Component {...pageProps} />
     </>
   );
 }
+
+export default wrapper.withRedux(App);

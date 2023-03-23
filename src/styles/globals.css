@@ -1,7 +1,15 @@
+.navigation {
+  width: 100%;
+}
+
 .login,
 .register {
   background-color: #343947;
   height: 100vh;
+}
+
+.logout {
+  margin-left: auto;
 }
 
 .homepage-intro {
