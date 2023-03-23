@@ -64,3 +64,23 @@
 .mainMenu .navbar {
   background-color: transparent !important;
 }
+
+.alert {
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.exam-status {
+  display: flex;
+}
+
+.status {
+  margin-left: 10px;
+  width: fit-content;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}

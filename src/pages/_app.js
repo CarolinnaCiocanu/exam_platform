@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
+import "../styles/examsList.css";
 
 import Navbar from "../components/Navbar";
 import { wrapper } from "../redux/store";

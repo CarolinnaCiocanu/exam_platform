@@ -21,35 +21,26 @@ export default function Menu({ user }) {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="navigation">
               <Nav.Link href="/">Home</Nav.Link>
-              {!user.isAuth && (
-                <>
-                  <Nav.Link href="/Login">Login</Nav.Link>
-                  <Nav.Link href="/Register">Register</Nav.Link>
-                </>
-              )}
-
+              {/* {!user.isAuth && ( */}
+              <>
+                <Nav.Link href="/Login">Login</Nav.Link>
+                <Nav.Link href="/Register">Register</Nav.Link>
+              </>
+              {/* // )} */}
               <NavDropdown title="Exams" id="basic-nav-dropdown">
-                {user.role === 0 && (
-                  <>
-                    <NavDropdown.Item href="#my-exams">
-                      My Exams
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#passed-exams">
-                      Passed Exams
-                    </NavDropdown.Item>
-                  </>
-                )}
+                {/* {user.role === 0 && ( */}
+                <>
+                  <NavDropdown.Item href="/Exams">My Exams</NavDropdown.Item>
+                </>
+                {/* // )} */}
 
-                {user.role === 1 && (
-                  <>
-                    <NavDropdown.Item href="#create-exam">
-                      Create Exam
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#create-exam">
-                      Evaluate Exam
-                    </NavDropdown.Item>
-                  </>
-                )}
+                {/* {user.role === 1 && ( */}
+                <>
+                  <NavDropdown.Item href="/CreateExam">
+                    Create Exam
+                  </NavDropdown.Item>
+                </>
+                {/* )} */}
               </NavDropdown>
               {user.isAuth && (
                 <Nav.Link onClick={() => signOut()} className="logout">
