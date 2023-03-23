@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Link from "next/link";
 
 export default function Register() {
   return (
@@ -33,9 +34,9 @@ export default function Register() {
                 Login
               </Button>
               <div className="w-100 d-flex justify-content-center">
-                <a href="/Login" className="text-dark">
+                <Link href="/Login" className="text-dark">
                   Have an account? Login here!
-                </a>
+                </Link>
               </div>
             </div>
           </Form>
