@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Link from "next/link";
 
 export default function Login() {
   return (
@@ -23,9 +24,9 @@ export default function Login() {
                 Login
               </Button>
               <div className="w-100 d-flex justify-content-center">
-                <a href="/Register" className="text-dark">
-                  Don't have an account? Register here!
-                </a>
+                <Link href="/Register" className="text-dark">
+                  Dont have an account? Register here!
+                </Link>
               </div>
             </div>
           </Form>
